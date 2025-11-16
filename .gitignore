@@ -1,0 +1,38 @@
+# Python virtual environments
+.venv/
+venv/
+
+# Python caches and artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.log
+*.sqlite3
+
+# Jupyter / misc
+.ipynb_checkpoints/
+*.ipynb
+
+# Node / frontend
+frontend/node_modules/
+frontend/.cache/
+frontend/build/
+frontend/dist/
+frontend/.parcel-cache/
+
+# Large local assets (not needed in repo)
+sample_audios/
+backend/pretrained_models/
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment / secrets
+.env
+.env.*

@@ -1,0 +1,22 @@
+fastapi
+uvicorn[standard]
+python-multipart
+python-dotenv
+
+# Transcription
+openai-whisper
+torch
+torchaudio
+
+# Audio cleaning
+noisereduce
+speechbrain
+
+# Summarization
+transformers
+sentencepiece
+accelerate
+
+# Common deps
+numpy
+soundfile
