@@ -1,3 +1,6 @@
+import warnings
+warnings.filterwarnings("ignore", module="pyannote.audio.core.io")
+
 import uvicorn
 
 if __name__ == "__main__":

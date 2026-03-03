@@ -1,0 +1,8 @@
+Backend
+
+.\.venv\Scripts\Activate.ps1
+python backend\run.py
+
+Frontend
+
+cd frontend ; npm start

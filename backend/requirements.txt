@@ -1,22 +1,21 @@
 fastapi
 uvicorn[standard]
 python-multipart
-python-dotenv
-
-# Transcription
 openai-whisper
 torch
 torchaudio
-
-# Audio cleaning
 noisereduce
-speechbrain
-
-# Summarization
 transformers
-sentencepiece
 accelerate
+sqlalchemy
+httpx
+pyannote.audio
+
+# Speed optimization - 4x faster than openai-whisper
+faster-whisper
 
 # Common deps
 numpy
 soundfile
+openai
+python-dotenv

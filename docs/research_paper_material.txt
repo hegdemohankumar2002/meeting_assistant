@@ -1,0 +1,106 @@
+# Project Research Documentation: AI Meeting Assistant
+
+This document contains comprehensive information for converting the **AI Meeting Assistant** project into a research paper. It is divided into two main sections: **Project Explanation** (Context, Goals, Significance) and **Technical Aspects** (Implementation Details, Tools, Algorithms).
+
+---
+
+## Section 1: Project Explanation
+
+### 1.1 Goal
+The primary goal of this project is to develop an **intelligent, context-aware Meeting Assistant** that automates the lifecycle of meeting documentation. Unlike traditional transcription tools that merely convert speech to text, this system aims to function as a "digital memory" for teams. It captures not just *what* was said, but *who* said it, *how* they said it (emotion), and *what it means* (decisions, risks, action items).
+
+The system addresses the critical problem of **information loss** in organizations, where valuable insights from spoken conversations are often forgotten or poorly documented.
+
+### 1.2 Problem Statement
+In modern professional environments, the volume of meetings exceeds human capacity to retain and organize information effective. Existing solutions typically offer:
+*   **Raw Transcripts**: Hard to read and lack context.
+*   **Basic Summaries**: Often miss nuance or specific technical details.
+*   **No "Memory"**: Each meeting is treated in isolation; there is no way to query "What did we decide about the database last month?".
+
+### 1.3 Proposed Solution
+We propose a **Hierarchical AI Processing Pipeline** that transforms unstructured audio into structured knowledge.
+The solution provides:
+1.  **Multi-Modal Analysis**: Combining Text (Whisper), Audio Identity (Pyannote), and Tonal Sentiment (Transformers).
+2.  **Structured Intelligence**: Automatically extracting "Decisions," "Risks," and constructing a "Strategic Roadmap" from the conversation.
+3.  **Role-Based Summarization**: Generating different summaries for different stakeholders (e.g., "Executive Brief" vs "Technical Deep Dive").
+4.  **Interactive Memory**: A RAG-based (Retrieval-Augmented Generation) chat interface allowing users to converse with their repository of past meetings.
+
+### 1.4 Research Significance
+This project contributes to the field of **Applied NLP in Business Productivity** by demonstrating:
+*   A **Hybrid Architecture**: Seamlessly switching between lightweight local models (BART, DistilRoberta) and powerful LLMs (DeepSeek/Llama via Ollama) based on task complexity.
+*   **Map-Reduce Summarization**: A method for handling long-duration meetings (>1 hour) by chunking, parallel processing, and synthesis, overcoming context-window limitations.
+*   **Automated Project Management**: Moving beyond passive recording to active project planning (Roadmap Generation).
+
+---
+
+## Section 2: Technical Aspects
+
+### 2.1 System Architecture
+The system follows a modular microservices-like architecture built on **FastAPI** (Backend) and **React** (Frontend).
+
+1.  **Client Layer**: React-based UI for file upload, real-time recording, and data visualization.
+2.  **API Layer**: FastAPI handling REST endpoints and WebSockets for real-time progress streaming.
+3.  **Processing Layer**: A pipeline of specialized AI services.
+4.  **Storage Layer**: SQLite for structured metadata and file system for raw audio artifacts.
+
+### 2.2 detailed Technology Stack
+
+#### A. Backend Core
+*   **Language**: Python 3.10+
+*   **Framework**: FastAPI (High-performance async server).
+*   **Database Integration**: SQLAlchemy (ORM).
+*   **Database**: SQLite (Prototyping) / PostgreSQL (Production ready).
+*   **Processing**: Asyncio for non-blocking I/O operations.
+
+#### B. Artificial Intelligence & NLP Pipeline
+The core innovation lies in the integration of specific state-of-the-art models:
+
+| Component | Technology / Library | Specific Model | Purpose |
+| :--- | :--- | :--- | :--- |
+| **Transcription** | `faster-whisper` (CTranslate2) | `small` or `base` (Configurable) | High-speed speech-to-text conversion optimized for CPU/GPU. |
+| **Diarization** | `pyannote.audio` | `speaker-diarization-3.1` | Identifying distinct speakers ("Who spoke when"). |
+| **Emotion Analysis** | Hugging Face Transformers | `j-hartmann/emotion-english-distilroberta-base` | Classifying segments into 7 emotions (anger, joy, neutral, etc.). |
+| **Summarization (Local)** | Hugging Face Pipeline | `philschmid/bart-large-cnn-samsum` | Fallback summarization fine-tuned on dialogue data. |
+| **Intelligence Engine** | Ollama / OpenAI API | `DeepSeek-R1` / `Llama3` (via config) | High-level reasoning: extracting Decisions, Risks, and Agenda. |
+| **Roadmap Generation** | LLM Prompt Engineering | Same as Intelligence Engine | Converting meeting insights into a Markdown project plan. |
+| **Memory/Chat** | Naive RAG | Custom Logic | Retrieving past meeting contexts to answer user queries. |
+
+### 2.3 Algorithms and Implementation Details
+
+#### 1. Audio Cleaning (Preprocessing)
+*   **Tool**: `noisereduce` (Spectral Gating).
+*   **Method**: Estimates the noise profile from the audio and subtracts it to improve transcription accuracy (WER - Word Error Rate).
+
+#### 2. Identification & Alignment Algorithm
+*   **Problem**: Whisper outputs text segments with timestamps, while Diarization outputs speaker labels with timestamps. They rarely match perfectly.
+*   **Solution**: An **Intersection-Over-Union (IoU)** style alignment algorithm.
+    *   Iterate through each Whisper text segment.
+    *   Find the Diarization segment with the maximum time overlap.
+    *   Assign that speaker label to the text.
+    *   Batch process the text through the Emotion Classifier (truncating to 512 tokens) to assign an emotional tone.
+
+#### 3. Map-Reduce Summarization Strategy
+*   **Challenge**: LLMs have token limits (context windows). A 2-hour meeting exceeds these.
+*   **Implementation**:
+    *   **Map Step**: Chunk transcript into 3000-word blocks. Process each block in parallel to extract partial "Key Points" and "Action Items".
+    *   **Reduce Step**: Concatenate partial insights into a "Dense Context". Pass this into a final LLM call to synthesize the "Executive Briefing".
+
+#### 4. Role-Based Summary Generation
+*   **Executive View**: heuristic keyword filtering (budget, deadline, cost, revenue) + Abstractive Summarization.
+*   **Technical View**: heuristic keyword filtering (api, database, deploy, bug) + Abstractive Summarization.
+
+### 2.4 Existing vs Future Implementation
+
+#### Implemented Features (Ready for Paper Results)
+*   [x] End-to-end Audio File Processing.
+*   [x] Speaker Identification & Visual Diarization.
+*   [x] Emotion Detection per segment.
+*   [x] Structured data extraction (Decisions, Risks).
+*   [x] Markdown Roadmap Generation.
+*   [x] Basic Chat-with-Memory (finding past meetings).
+
+#### Future / Yet to Be Implemented (Limitations & Future Work)
+*   [ ] **Vector Database (Embeddings)**: Currently, the "Memory" relies on keyword matching or dumping recent summaries into the context. Implementation of **ChromaDB** or **FAISS** is planned for semantic search scalability.
+*   [ ] **Real-Time Streaming Diarization**: Currently, transcription streams in real-time via WebSockets, but diarization runs as a post-process batch. Implementing streaming diarization would allow "Live Speaker ID".
+*   [ ] **User Authentication & Multi-Tenancy**: The system currently functions as a single-user personal tool.
+*   [ ] **Voice Biometrics**: Allowing users to tag "Speaker_01" as "John Doe" and have the system remember John's voice signature for future meetings.
