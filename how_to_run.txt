@@ -1,8 +1,23 @@
-Backend
+### Installation ###
 
-.\.venv\Scripts\Activate.ps1
-python backend\run.py
+**Backend Requirements (Python 3.10+)**
+1. Create a virtual environment: `python -m venv .venv`
+2. Activate it: `.\.venv\Scripts\Activate.ps1` (Windows) or `source .venv/bin/activate` (Mac/Linux)
+3. Install dependencies: `pip install -r requirements.txt`
 
-Frontend
+**Frontend Requirements (Node.js)**
+1. Navigate to frontend: `cd frontend`
+2. Install dependencies: `npm install`
+3. Install legacy peer dependencies if needed: `npm install --legacy-peer-deps`
 
-cd frontend ; npm start
+---
+
+### How to Run ###
+
+**Backend (Terminal 1)**
+1. Activate virtual environment: `.\.venv\Scripts\Activate.ps1`
+2. Start the server: `python backend\run.py`
+
+**Frontend (Terminal 2)**
+1. Navigate to frontend: `cd frontend`
+2. Start the React app: `npm start`
