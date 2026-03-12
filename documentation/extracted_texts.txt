@@ -1,0 +1,277 @@
+=== documentation/MCA_Project Report_format.docx ===
+Kudlu gate, Hosur Road, Bengaluru – 560068
+SCHOOL OF COMPUTER APPLICATIONS
+A Project Report
+on
+<< Project Title>>
+Submitted in Partial fulfilment of the requirements for the award of the Degree of
+MASTER OF COMPUTER APPLICATIONS
+Submitted by
+<< Name of the Student >> 
+USN NO
+Under the guidance of
+<<Details of the guide>>
+MARCH  2026
+DAYANANDA SAGAR UNIVERSITYKudlu Gate, Hosur Road, Bengaluru – 560068
+SCHOOL OF COMPUTER APPLICATIONS
+BONAFIDE CERTIFICATE
+This is to certify that the project titled “<<Project Title>>” is a bonafide record of the work undertaken by <<Name of the Student (USN NO)>> in partial fulfillment of the requirements for the award of the Master of Computer Applications degree at the School of Computer Applications, Dayananda Sagar University, Bengaluru, during the academic year 2025-2026.
+         
+       GUIDE       DEAN
+<<Guide name and Details>>
+Dr. S. Senthil
+Professor and Dean
+School of Computer Applications
+Dayananda Sagar University
+Bengaluru
+                                                                                                                                                            Project Viva-voce held on ______________________.
+                 
+                                                                                                                 
+    Internal Examiner                                                                                     External Examiner
+SCHOOL OF COMPUTER APPLICATIONS
+DECLARATION
+I, << Name of the Student >>, a student of the Master of Computer Applications program at the School of Computer Applications, Dayananda Sagar University, hereby declare that this project, titled “<< Project Title >>”, is the result of my independent work carried out under the supervision of << Guide’s Name and Designation >>.
+I am submitting this project work in partial fulfillment of the requirements for the award of the Master of Computer Applications degree by Dayananda Sagar University, Bengaluru, for the Academic Year 2025-2026.
+I further affirm that this project report, in whole or in part, has not been submitted for the award of any other degree or diploma at this or any other university/institution.
+Signed by me on: _______________
+Signature of the Candidate
+This is to certify that the project work submitted by << Name of the Student >> has been carried out under my guidance, and the declaration made by the candidate is true to the best of my knowledge.
+Signature of the Guide
+Date: _______________
+ACKNOWLEDGEMENT
+I express my heartfelt gratitude and salutations to my beloved and highly esteemed institute, Dayananda Sagar University, for providing me with an excellent platform to learn and grow. I am deeply thankful for the unwavering support and encouragement extended throughout my academic journey.
+I extend my sincere gratitude to Dr. D. Hemachandra Sagar, Chancellor, and Dr. Premachandra Sagar, Pro Chancellor, Dayananda Sagar University, for their visionary leadership and continuous support in fostering an environment of academic excellence and innovation.
+I am profoundly grateful to Dr. B.S. Satyanarayana, Vice Chancellor, and Dr. Puttamadappa C, Registrar, Dayananda Sagar University, for their invaluable guidance and commitment to ensuring a world-class education at the university. Their dedication has been a source of inspiration.
+I extend my heartfelt thanks to Dr. S. Senthil, Professor and Dean, School of Computer Applications, Dayananda Sagar University, for his valuable suggestions, expert advice, and constant support throughout my project. His insights and encouragement have been instrumental in the successful completion of this work.
+I am deeply indebted to my guide, Mr./Ms. X, Assistant Professor / Associate Professor / Professor, School of Computer Applications, Dayananda Sagar University, for his/her continuous support, necessary advice, and invaluable guidance, which played a significant role in shaping the outcome of my project. His/Her mentorship has been a guiding light throughout this journey.
+I would also like to extend my appreciation to all the teaching and non-teaching staff members of the School of Computer Applications, Dayananda Sagar University, for their support and assistance during my academic tenure. Their efforts have contributed immensely to my learning experience.
+Lastly, I am forever grateful to my parents and friends, whose unwavering support, motivation, and encouragement have been my strength throughout this journey. Their belief in me has been a driving force in achieving my goals.
+I perceive this opportunity as a significant milestone in my career development. I will strive to utilize the knowledge and skills gained in the best possible way and will continue to work towards self-improvement to achieve my career aspirations. I look forward to continued collaboration and learning in the future.
+<<Student name>>
+[USN NO]
+CONTENTS
+CHAPTER 1: INTRODUCTION
+Project Overview
+Statement of the Problem
+Brief Description of the Project
+Objectives of the Project
+Scope of the Project
+Software and Hardware Requirements
+Software Specifications 
+Hardware Specifications
+1.3 Functional and Non-Functional Requirements
+1.4 Company/Domain Profile (if applicable)
+CHAPTER 2: LITERATURE SURVEY
+2.1 Existing Research and Related Work2.2 Gaps in Existing Systems2.3 Overview of Technologies Used (AI/ML, Deep Learning, etc.)2.4 Comparison of Different Approaches
+CHAPTER 3: METHODOLOGY & SYSTEM ANALYSIS
+Existing System
+Overview of Current System
+3.1.2 Challenges and Limitations
+Proposed System
+System Architecture
+3.2.2 Features and Functionalities
+Datasets Used (for AI/ML projects)
+Dataset Description
+Data Collection Process
+Data Preprocessing Techniques
+Machine Learning Model/Algorithm Selection (for AI/ML projects)
+Algorithm Justification
+Training and Testing Data Split
+Feature Selection and Engineering
+Feasibility Study
+Technical Feasibility 
+Economic Feasibility 
+Operational Feasibility
+CHAPTER 4: SYSTEM DESIGN AND DEVELOPMENT
+System Architecture (High-Level Design)
+Conceptual Design 
+Component Diagram
+Detailed Design (Low-Level Design)
+Data Flow Diagram (DFD) 
+Use Case Diagrams 
+Activity Diagrams
+Class Diagrams (if applicable)
+Database Design
+ER Diagram
+Schema Design
+Input/Output Interface Design
+User Interface (UI) Screens
+API Design (if applicable)
+Module Description
+Description of Each Module
+Functionality and Interaction
+CHAPTER 5: IMPLEMENTATION & CODING
+5.1 Programming Language and Framework Used5.2 Algorithmic Approach (for AI/ML-based projects)
+Pseudocode 
+Flowcharts
+Model Training and Fine-Tuning
+Code Snippets and Explanation
+5.3.1 Key Functionalities
+CHAPTER 6: SOFTWARE TESTING
+Testing Strategies
+Unit Testing 
+Integration Testing 
+System Testing
+Test Cases
+6.2.1 Sample Test Cases with Expected vs. Actual Results
+Performance Metrics and Evaluation (for AI/ML projects)
+Confusion Matrix
+Precision, Recall, F1-Score
+Model Accuracy and Loss Curves
+CHAPTER 7: RESULTS AND DISCUSSION
+Experimental Setup
+Hardware/Software Setup
+Model Hyperparameters (for AI/ML projects)
+Model Performance Analysis (for AI/ML projects)
+Training vs. Testing Performance
+Bias-Variance Analysis
+Model Comparisons (if multiple models used)
+7.3 Comparison with Existing Systems7.4 Visualization of Results
+Graphs, Charts, and Performance Trends
+7.5 Screenshots of Working System
+CHAPTER 8: CONCLUSION AND FUTURE ENHANCEMENTS
+8.1 Conclusion8.2 Limitations of the Project8.3 Scope for Future Enhancements
+REFERENCES
+Books, Research Papers, Websites, APIs used, etc.
+Project Report- Document Format
+The students must follow the following standards & formats for Project submission. 
+Report Cover: 
+Soft Binding
+Margins: 
+Top: 1”, Bottom: 1”, Left: 1.5”, Right: 1”
+Orientation: 
+Portrait
+All fonts: 
+Times New Roman
+Chapter No.: 
+Font size 18 Sentence case + Bold
+Chapter TITLE: 
+Font size 18 Capital case + Bold
+FIRST LEVEL OF HEADING: 
+Font size 16 Capital case + Bold
+Second Level of Heading: 
+Font size 14 Sentence case + Bold 
+Third Level of Heading: 
+Font size 12 Sentence case + Italic (Without bold) 
+Table Caption: 
+Font size 12 Sentence case + Bold (at the top of the Table)
+Fig. Caption: 
+Font size 12 Sentence case + Bold (at the bottom of the Fig.)
+Body Text: 
+Font size Times New Roman, 12 Normal
+Page No. 
+Bottom, Right Align, Front pages numbered as i, ii, iii etc. 
+Chapter pages and references numbered as 1, 2, 3 etc.
+Line Spacing: 
+1.5 lines
+Printing: 
+One side of the page
+
+========================================
+
+=== documentation/SRP-Abstract.docx ===
+Abstract
+AI-Powered Meeting Assistant for Enhanced Productivity and Accessibility
+Introduction
+In the modern professional landscape, meetings are a fundamental mode of communication but often suffer from inefficiency, information loss, and a lack of actionable follow-through. Traditional note-taking is manual, prone to bias, and distracting, leading to reduced engagement. Furthermore, the lack of accessible, real-time transcription creates significant barriers for individuals with hearing impairments or language processing difficulties. This project, the AI Meeting Assistant, addresses these challenges by leveraging advanced artificial intelligence to automate the documentation, analysis, and synthesis of spoken interactions.
+Methodology
+The system is built on a robust client-server architecture using React for the frontend and FastAPI for the backend. It integrates state-of-the-art machine learning models to process audio data through a scalable pipeline:
+Transcription: Utilizes faster-whisper for high-speed, accurate speech-to-text conversion, supporting both real-time streaming and large file batch processing.
+Speaker Diarization: Employs pyannote.audio to distinguish and label individual speakers, ensuring clarity in multi-speaker environments.
+Natural Language Understanding: Implements zero-shot classification (BART-large-MNLI) to extract critical insights such as decisions, agreements, and conflicts from the transcribed text.
+Emotion Analysis: Integrates sentiment analysis models to detect the emotional tone of the conversation, adding a layer of behavioral context.
+Key Features
+The AI Meeting Assistant offers a comprehensive suite of features designed to transform raw audio into structured knowledge:
+Live Transcription & Progressive Updates: Provides immediate visual feedback via WebSocket streaming, displaying the transcript in real-time while processing deeper analysis in the background.
+Scalable Large File Processing: optimized to handle long-duration meetings (1 hour+) through intelligent audio chunking and batch processing, overcoming common memory and timeout limitations.
+Intelligent Summarization: Generates role-specific summaries (e.g., Executive vs. Technical) to cater to different stakeholder needs.
+Smart Insight Extraction: Automatically identifies and categorizes key outcomes, action items, and potential conflicts.
+Searchable History: Stores meeting data in a structured database, enabling users to retrieve past discussions and decisions effortlessly.
+Social Relevance and Impact
+This project holds significant social relevance across multiple dimensions:
+Accessibility: By providing real-time, accurate captions and transcripts, the tool bridges the communication gap for the deaf and hard-of-hearing community, fostering inclusivity in workplaces and educational institutions.
+Cognitive Support: Assists individuals with attention deficit disorders or cognitive processing challenges by providing a reliable record of conversations that can be reviewed at their own pace.
+Productivity & Well-being: Automating the cognitive load of note-taking allows participants to focus entirely on the discussion, reducing "Zoom fatigue" and improving work-life balance by minimizing post-meeting administrative work.
+Transparency & Accountability: Creates an objective, unbiased record of decisions and agreements, reducing misunderstandings and promoting a culture of accountability.
+Conclusion
+The AI Meeting Assistant represents a significant step forward in the application of AI for social good. By democratizing access to information and automating tedious tasks, it not only enhances organizational productivity but also promotes a more inclusive and equitable communication environment. This project demonstrates how cutting-edge technology can be harnessed to solve tangible, everyday problems in the social and professional sphere.
+
+========================================
+
+=== documentation/meeting_assistant_comp.docx ===
+AI Powered Next-Gen Meeting Assistant
+Abstract
+In the era of rapid digital transformation, professional documentation remains a significant bottleneck, often resulting in "information loss" and reduced organizational accountability. Current solutions are predominantly cloud-centric, necessitating the transmission of sensitive acoustic data to third-party servers, which introduces substantial privacy risks and latency. This paper proposes a Privacy-First, Edge-AI Framework for Automated Meeting Documentation. By integrating quantized Automatic Speech Recognition (ASR), waveform-based Speaker Diarization, and Zero-Shot Natural Language Understanding (NLU), the system processes multi-speaker interactions entirely on the local client. Results demonstrate a 4x inference speedup over standard cloud-reliant architectures, while maintaining 100% data sovereignty. This research provides a scalable blueprint for secure, inclusive, and high-performance communication analysis in regulated environments.
+Introduction
+The Problem: In modern professional landscapes, meetings are fundamental but inefficient, often lacking actionable follow-through. Manual note-taking is distracting and prone to bias.
+Accessibility Barriers: A lack of real-time transcription creates significant barriers for individuals with hearing impairments or cognitive processing challenges.
+Proposed Solution: An intelligent, context-aware assistant that functions as a "digital memory," capturing not just what was said, but who said it and what it means through structured intelligence.
+Comparative Analysis: The Paradigm Shift
+We categorize existing systems as "Centralized Cloud Utilities" and position our proposed system as an "Edge-Intelligence Framework."
+Dimensional Metric
+Centralized Systems (Zoom, Meet, Otter.ai)
+Proposed Edge-AI Framework
+Nature of Enhancement
+Data Sovereignty
+Custodial: Audio data is transmitted and stored on vendor servers.
+Sovereign: 100% Local processing. Zero data egress.
+Eliminates "Privacy Tax" for legal/medical compliance.
+Inference Latency
+Network-Gated: Round-trip delays and cloud queuing.
+Hardware-Optimized: Direct local execution via int8 quantization.
+4x increase in processing speed; sub-second real-time feedback.
+Connectivity Robustness
+Fragile: High bandwidth required for AI features.
+Autonomous: Functions in air-gapped or low-connectivity zones.
+Ensures reliability for field work and high-security zones.
+Contextual Extraction
+Generic Summarization: Broad strokes, often losing technical nuance.
+Intent-Based Classification: Zero-shot isolation of Decisions and Agreements.
+High-granularity "Action Item" extraction without specific model re-training.
+Speaker Attribution
+Identity-Linked: Often relies on active login tokens.
+Acoustic-Linked: pyannote.audio diarization via vocal signatures.
+Precise attribution even for multi-speaker "round-table" physical setups.
+Historical Memory
+Isolated: Meetings are often treated as distinct, siloed files.
+Relational: Structured SQLite persistence for semantic cross-referencing.
+Transforms raw audio into a searchable "Digital Memory" asset.
+Methodology & System Architecture
+The framework utilizes a modular microservices architecture built on FastAPI and React.
+Pipelined Execution: Audio is captured via microphone or file upload and processed through a high-performance pipeline.
+Optimized ASR: Uses faster-whisper (CTranslate2) with int8 quantization and a Beam Search size of 5 for real-time visual feedback via WebSockets.
+Speaker Diarization: Employs an Intersection-Over-Union (IoU) style alignment algorithm to synchronize text segments with vocal signatures from pyannote.audio.
+NLU & Insight Extraction: Implements Zero-Shot Classification (BART-large-MNLI) to automatically categorize outcomes into "Decisions," "Agreements," and "Action Items".
+Novelties & Architectural Contributions
+1. Localized High-Fidelity Pipeline (The Efficiency Novelty)
+We have engineered a pipeline that overcomes the "Resource Constraint" problem of local AI. By utilizing Faster-Whisper with int8 quantization and a Beam Search size of 5, the system achieves Word Error Rates (WER) comparable to OpenAI’s cloud-hosted Large-v3 model but at a fraction of the computational cost. This proves that high-performance ASR is no longer gated by cloud infrastructure.
+2. Zero-Shot Intent Synthesis (The Analytical Novelty)
+Unlike traditional systems that require massive labeled datasets for specific domains, our framework utilizes a Zero-Shot Classification (BART-large-MNLI) layer. This allows the system to dynamically categorize spoken sentences into Decisions, Agreements, and Risks regardless of the professional domain (Legal, Tech, or Education). It moves the assistant from "what was said" to "what was intended."
+3. Pipelined Asynchronous Execution (The Engineering Novelty)
+The system architecture introduces a dual-track processing model:
+Synchronous Track: Real-time transcription via WebSockets for immediate visual accessibility (Live Captions).
+Asynchronous Track: Post-segmentation processing for Speaker Diarization and Roadmap Generation, ensuring that deep analysis does not interrupt the real-time user experience.
+
+========================================
+
+=== documentation/presentation_02.pptx ===
+Next-Gen Cognitive AI Meeting Assistant   A Privacy-First, Edge-AI Platform for Real-Time Meeting Analysis
+---
+ Results Performance : Achieved  4x inference speedup  compared to standard Hugging Face Transformers implementation using faster-whisper. Accuracy : Maintains high-fidelity transcription comparable to  OpenAI's  localized Whisper Large text generation. Real-Time Capability : Successfully handles live streaming with acceptable latency for real-time feedback. Feature Richness : Successfully integrates multiple distinct AI tasks (ASR,  Diarization , Sentiment, Summarization) into a single cohesive interface. Privacy : Zero data egress confirmed; the application functions fully entirely offline (excluding optional hybrid cloud features).
+---
+Proposed Methodology The system follows a pipelined architecture: Audio Ingestion : Audio is captured via microphone (Live) or file upload and streamed in chunks. Streaming ASR : Audio chunks are processed by  Faster-Whisper  (Beam search size 5) to generate text. Partial results are streamed immediately via  WebSockets  for "live typing" effect. Intelligent Segmentation : Long audio is intelligently split based on silence and semantic pauses to prevent context breaks. Multi-Stage Analysis  (Post-Processing): Diarization : Audio waveforms are analyzed to assign speaker labels. Emotion Detection : Text segments are scored for sentiment (Positive/Negative/Neutral). Insight Extraction : The BART model runs zero-shot classification to tag sentences as "Decision", "Agreement", or "Conflict". Storage & UI : All processed data is persisted to SQLite and rendered on the React Dashboard.
+---
+ Research Gap While robust cloud solutions and raw open-source models exist, there is a gap in  integrated, privacy-first, real-time applications . Model Optimization Gap : Standard open-source models (like Whisper Large) are too slow for real-time local use. This project fills this gap by implementing  quantized inference (int8)  to achieve real-time speeds on consumer CPUs/GPUs. Privacy-Utility Trade-off : Users currently choose between high-quality cloud AI (low privacy) or basic local tools (low utility). This project bridges this by offering  cloud-level intelligence (summaries, emotions) with local-level privacy .
+---
+Dataset Used Inference Models : The project uses pre-trained state-of-the-art models, which were trained on massive global datasets: Whisper : Trained on 680,000 hours of multilingual and multitask supervised data. BART-Large : Trained on the generic CNN/ DailyMail  dataset for summarization capabilities. Testing & Validation : Sample Audio : The project includes a  sample_audios  directory for benchmarking performance. Local Database : User data is generated dynamically and stored in  meetings.db  (SQLite), creating a personalized local dataset that never leaves the machine.
+---
+Literature Survey  Cloud-Based Solutions : Otter.ai / Zoom AI : Industry leaders providing excellent transcription and summary but require data upload, raising privacy concerns. Google Meet Captions : Real-time but ephemeral (not saved locally with rich analysis) and cloud-dependent. Open Source Foundations : OpenAI  Whisper : State-of-the-art ASR model, but the standard implementation is computationally heavy and often too slow for real-time local usage on consumer hardware. Pyannote.audio : The standard for speaker  diarization , but challenging to integrate seamlessly for real-time streams . The Shift to Edge AI : Recent research emphasizes " TinyML " and model quantization (e.g., int8, weight pruning) to bring large language model capabilities to local edge devices.
+---
+Abstract The "Next-Gen Cognitive AI Meeting Assistant" is a privacy-centric application designed to transcribe and analyze meetings in real-time without relying on external cloud processing for audio data. Unlike traditional meeting assistants that stream sensitive voice data to third-party servers, this project leverages  Edge AI  to perform Automatic Speech Recognition (ASR), Speaker  Diarization , and Natural Language Processing (NLP) entirely on the user's local device. The system utilizes optimized models like  Faster-Whisper  (int8 quantization) and  BART-large  to deliver 4x faster performance than standard implementations while ensuring 100% data privacy. Key features include real-time character-by-character transcription, emotion recognition, and role-based summarization. This solution bridges the gap between high-performance cloud AI and strict data privacy requirements, making it ideal for confidential corporate or personal meetings.
+---
+Technology Selected The project is built on a modern, full-stack architecture designed for performance and concurrency: Frontend : React.js 18 : For a dynamic, high-performance user interface. WebSocket  API : For receiving real-time transcription streams with millisecond latency. Backend : Python 3.10+ : Core logic handling. FastAPI : Asynchronous web framework to handle concurrent transcription streams and API requests. SQLAlchemy  & SQLite : For local, persistent storage of meeting history and insights. AI & Machine Learning : Faster-Whisper : An optimized implementation of Whisper using CTranslate2 (int8 quantization) for high-speed local inference. Pyannote.audio : For Speaker  Diarization  (distinguishing between Speaker A and Speaker B). Facebook  BART (Large-MNLI/CNN) : For Zero-Shot classification and abstractive summarization. DistilRoBERTa : For emotion and sentiment analysis.
+---
+Problem Identification Data Privacy & Security : Most existing meeting assistants (e.g., Otter.ai, Zoom AI) are cloud-based, requiring users to upload sensitive audio data to external servers. This poses a significant risk for confidential discussions (e.g., legal, medical, or trade secrets). Latency & Connectivity : Cloud-dependent solutions suffer from latency due to network round-trips and become non-functional without internet access. Subscription Fatigue : Enterprise-grade meeting insights are often locked behind expensive recurring subscriptions. Lack of Actionable Intelligence : Basic transcription tools often fail to extract structured, actionable insights like decisions or conflicts, leaving users with just raw text.
+
+========================================
+

@@ -263,13 +263,25 @@ def summarize_map_reduce(text: str) -> dict:
         all_actions.extend(partial.get("actions", []))
         all_decisions.extend(partial.get("decisions", []))
 
+    def _to_str(item):
+        """Safely convert any item (dict, list, or scalar) to a plain string."""
+        if isinstance(item, dict):
+            # e.g. {"who": "Alice", "what": "Fix bug", "when": "Friday"}
+            parts = [f"{v}" for v in item.values() if v]
+            return " — ".join(parts)
+        return str(item)
+
+    safe_points    = [_to_str(x) for x in all_points    if x]
+    safe_actions   = [_to_str(x) for x in all_actions   if x]
+    safe_decisions = [_to_str(x) for x in all_decisions if x]
+
     # Step 2: Reduce (Synthesize)
     # Create a condensed context from extracted parts
     condensed_text = (
         "Combined Notes from Meeting Segments:\n"
-        f"Key Points:\n- " + "\n- ".join(all_points) + "\n\n"
-        f"Action Items:\n- " + "\n- ".join(all_actions) + "\n\n"
-        f"Decisions:\n- " + "\n- ".join(all_decisions)
+        f"Key Points:\n- " + "\n- ".join(safe_points    or ["None"]) + "\n\n"
+        f"Action Items:\n- " + "\n- ".join(safe_actions  or ["None"]) + "\n\n"
+        f"Decisions:\n- "    + "\n- ".join(safe_decisions or ["None"])
     )
 
     logger.info("Map-Reduce: Reducing final summary...")

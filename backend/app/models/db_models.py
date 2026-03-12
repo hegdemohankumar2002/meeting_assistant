@@ -6,29 +6,34 @@ from app.database import Base
 class Meeting(Base):
     __tablename__ = "meetings"
 
-    id = Column(String, primary_key=True, index=True)
+    id = Column(Integer, primary_key=True, autoincrement=True, index=True)
+    title = Column(String, default="Untitled Meeting")
     filename = Column(String, index=True)
+    duration_seconds = Column(Integer, default=0)
     upload_timestamp = Column(DateTime, default=datetime.utcnow)
     created_at = Column(DateTime, default=datetime.utcnow)
     transcript = Column(Text)
     summary = Column(Text)
-    cleaning_used = Column(Integer, default=0)  # 0 = False, 1 = True (SQLite doesn't have boolean)
+    cleaning_used = Column(Integer, default=0)  # 0 = False, 1 = True (SQLite compatible)
     
-    # Storing structured data as JSON strings for simplicity in SQLite
+    # Storing structured data as JSON strings for SQLite compatibility
     key_points = Column(Text)     # JSON list
     action_items = Column(Text)   # JSON list
     speakers = Column(Text)       # JSON list of dicts
-    segments = Column(Text)       # JSON list of dicts
-    insights = Column(Text, default="{}")  # JSON string: {decisions: [], agreements: [], conflicts: []}
-    role_summaries = Column(Text, default="{}")  # JSON string: {executive: "", technical: ""}
-    inferred_agenda = Column(Text) # Text of inferred agenda
-    roadmap = Column(Text) # Markdown string of roadmap
+    segments = Column(Text)       # JSON list of dicts (with emotion=None now)
+    insights = Column(Text, default="{}")   # JSON: {decisions: [], agreements: [], conflicts: []}
+    role_summaries = Column(Text, default="{}")  # JSON: {executive: "", technical: ""}
+    inferred_agenda = Column(Text)
+    roadmap = Column(Text)
 
     def to_dict(self):
         return {
             "id": self.id,
+            "title": self.title,
             "filename": self.filename,
+            "duration_seconds": self.duration_seconds,
             "upload_timestamp": self.upload_timestamp.isoformat() if self.upload_timestamp else None,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
             "transcript": self.transcript,
             "summary": self.summary,
             "key_points": json.loads(self.key_points) if self.key_points else [],

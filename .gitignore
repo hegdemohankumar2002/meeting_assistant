@@ -36,3 +36,9 @@ Thumbs.db
 # Environment / secrets
 .env
 .env.*
+
+# Local Database
+*.db
+
+# Temporary Chat Drafts
+chat_input
